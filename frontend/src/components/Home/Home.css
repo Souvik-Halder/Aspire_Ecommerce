@@ -1,15 +1,15 @@
 .banner {
-  background-image: url("../../images/cover.jfif");
-  background-position: center;
+  background-image: url("../../images/Pharmherosec.svg");
+  background-position: right;
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vmin;
+  background-size: contain;
+  height: 90vmin;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: rgb(8, 8, 8);
 }
 
 .banner > h1 {
@@ -42,11 +42,11 @@
   content: "";
   width: 100vw;
   height: 100vmin;
-  background-color: #ffffff;
+  background-color: #b3659657;
   position: absolute;
   top: 0%;
   left: 0;
-  clip-path: polygon(100% 68%, 0 100%, 100% 100%);
+  clip-path: polygon(100% 70%, 0 100%, 100% 100%);
   max-width: 100%;
 }
 
@@ -71,6 +71,7 @@
 }
 
 .productCard {
+  background: #f5daed;
   width: 14vmax;
   display: flex;
   flex-direction: column;
@@ -106,7 +107,7 @@
 
 .productCard > span {
   margin: 0.5vmax;
-  color: tomato;
+  color: blue;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1vmax;
 }

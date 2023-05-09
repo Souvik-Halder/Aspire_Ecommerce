@@ -24,16 +24,12 @@ const Home = () => {
   return (
     <>
     {loading?<Loader/>:<>
-    <MetaData title={"Ecommerce"}/>
+    <MetaData title={"Pharma Store"}/>
      <div className="banner">
-            <p>Welcome to Ecommerce</p>
+            <p>Welcome to Pharmastore</p>
             <h1>FIND AMAZING PRODUCTS BELOW</h1>
 
-            <a href="#container">
-              <button>
-                Scroll <HiArrowDown />
-              </button>
-            </a>
+            
           </div>
           <h2 className="homeHeading">Featured Products</h2>
     <div className="container" id="container">
