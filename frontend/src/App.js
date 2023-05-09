@@ -38,6 +38,7 @@ import { Elements } from '@stripe/react-stripe-js';
 import Dashboard from './components/Admin/Dashboard.js';
 import NewProduct from './components/Admin/NewProduct';
 import UpdateProduct from './components/Admin/UpdateProduct.js'
+import Navbar from './components/layout/Header/Navbar';
 axios.defaults.withCredentials=true
 function App() {
   const isAdmin=true;
@@ -72,7 +73,8 @@ useEffect(()=>{
     <Router>
     <Elements stripe={stripePromise}>
 
-      <Header/>
+      {/* <Header/> */}
+      <Navbar/>
       {isAuthenticated && <UserOptions user={user}/>}
       <Routes>
   

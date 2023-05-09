@@ -4,7 +4,7 @@ import logo from '../../../images/logo.png'
 import {FaUser} from 'react-icons/fa'
 import {BsSearch ,BsFillCartFill} from 'react-icons/bs'
 const options = {
-  burgerColorHover: "#ff8b3d",
+  burgerColorHover: "#00AFF5",
   logo,
   logoWidth: "20vmax",
   navColor1: "white",

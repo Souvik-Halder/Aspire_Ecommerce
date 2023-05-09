@@ -1,0 +1,126 @@
+.navbar {
+    z-index: 20;
+    display: flex;
+    text-decoration: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    background-color: currentColor;
+    height: 80px;
+    padding: 0 40px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar__left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__logo {
+    height: 40px;
+    width: 40px;
+  }
+  
+  .navbar__middle {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+
+  }
+  
+  .navbar__link {
+    margin: 0 20px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: #bebdbd;
+    padding: 3px 8px;
+    border-radius: 100px;
+  }
+  
+  .navbar__link:hover {
+    color: #ffffff;
+    background: #6c6fdb;
+  }
+  
+  .navbar__right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__icon {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+  }
+  
+  .navbar__dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .navbar__dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    min-width: 120px;
+    padding: 10px;
+    background-color: #444444;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar__dropdown-link {
+    margin: 5px 0;
+    font-size: 16px;
+    text-decoration: none;
+    color: #bab7b7;
+    padding: 2px 4px;
+  }
+  
+.navbar__dropdown-link:hover {
+color: #fbf7f7;
+background: #737cde;
+}
+
+@media (max-width: 768px) {
+.navbar {
+flex-direction: column;
+height: auto;
+padding: 20px;
+}
+
+.navbar__middle {
+margin: 20px 0;
+}
+
+.navbar__link {
+display: block;
+margin: 10px 0;
+}
+
+.navbar__dropdown {
+display: block;
+margin: 10px 0;
+}
+
+.navbar__dropdown-menu {
+position: static;
+display: none;
+margin: 10px 0 0 20px;
+padding: 0;
+box-shadow: none;
+}
+
+.navbar__dropdown-menu.show {
+display: flex;
+flex-direction: column;
+}
+
+.navbar__dropdown-link {
+margin: 0;
+}
+}  
